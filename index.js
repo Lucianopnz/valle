@@ -12,6 +12,8 @@ router.get('/sobre', function(req,res){
 })
 
 app.use('/', router);
-app.listen(process.env.port || 3000, ()=>{
+
+const PORT = process.env.port || 8089
+app.listen(PORT, ()=>{
     console.log("Servidor rodando com sucesso...")
 });
