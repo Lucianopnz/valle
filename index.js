@@ -13,7 +13,7 @@ router.get('/sobre', function(req,res){
 
 app.use('/', router);
 
-const PORT = process.env.port || 8089
+const PORT = process.env.port || 21000
 app.listen(PORT, ()=>{
     console.log("Servidor rodando com sucesso...")
 });
